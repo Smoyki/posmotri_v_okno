@@ -17,8 +17,10 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  /*align-content: center; /* + */
+  /*justify-content: center;  /* + */
   align-items: center;
-  min-height: 800px;
+  min-height: 800px; /* Узнать по поводу этого свойства */
 }
 
 h1,
@@ -49,7 +51,7 @@ ol {
 
 .result {
   display: grid;
-  align-self: flex-end;
+  align-self: flex-end; /* Выравнивание по нижнему краю */
   grid-template-rows: auto 1fr;
 }
 
@@ -57,22 +59,27 @@ ol {
   inline-size: 100%;
   display: flex;
   flex-direction: column;
+  /* gap: 26px; */
   justify-content: start;
+  /* position: relative; */
 }
 
 .result__video-container {
   display:flex;
   position: relative;
-  margin: 0 0 15px;
-  width: 711px;
-  height: 386px;
+  /* Какие размеры ставить */
+  /* inline-size: 711px; */
+  margin: 0 0 15px;  /* Нижний отступ пытаемся */
+  /*padding-bottom: 16px;*/
 }
 
 .result__video {
+  inline-size: 100%;    /* Замостил */
+  block-size: 100%;
   object-fit: cover;
   object-position: center;
-  width: 100%;            
-  height: 100%;
+  width: 711px;               /* Какие размеры ставить  ??????*/
+  height: 386px;
 }
 
 .search-form {
@@ -81,6 +88,7 @@ ol {
   gap: 40px;
   grid-template-columns: 1fr auto 1fr;
   align-items: flex-start; 
+  /* width: 711px; */
 }
 
 
@@ -100,6 +108,8 @@ ol {
 .content__video-card {
   display: flex;
   justify-content: space-between;
+  /* width: 394px; */
+  /* height: 107px; Какие задавались размеры ? карточкаам */
 }
 
 
@@ -132,23 +142,23 @@ ol {
   text-decoration: none;
 }
 
-.content__video-card-title {          
+.content__video-card-title {            /* Наименование городов в карточках */
+  padding: 2px 2px 5px;
   color: #FFF;
-  font-family: "Oswald", sans-serif;    
+  font-family: "Oswald", sans-serif;     /* Надо ли подключать шрифт Oswald */
   font-weight: 700;
   font-size: 30px;
-  line-height: 100%;                 
+  line-height: 100%;                     /* Разобьраться со стилями */
   text-transform: uppercase;
-  hyphens: auto;                      
+  hyphens: auto;                         /* Нет переноса текста на другую строку в Калининград */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; 
   font-style: normal;
-  padding: 2px 2px 5px;
 }
 
 .search-form__fieldset-title {
-font-family: "Fira Sans" Condensed;
+font-family: "Fira Sans" Condensed;  /* Шрифт подключать? */
 font-size: 18px;
 font-weight: 400;
 line-height: 21.6px;
@@ -203,15 +213,15 @@ text-align: left;
   border: 1px solid #fff;
 }
 
-.search-form__textfield {
-  font-family: inherit;
-  font-weight: inherit;                    
+.search-form__textfield {                       
   border-top: 1px solid #FFF;
   border-right: none;
   border-bottom: 1px solid #FFF;
   border-left: none;
   padding: 2px 0;
   color: currentColor;
+  font-family: inherit;
+  font-weight: inherit;        /* У кого наследует, какой элемент выше в html коде Какие стили прописывали ?*/
   font-size: inherit;
   background-color: transparent;
   inline-size: 225px;
@@ -237,19 +247,20 @@ text-align: left;
 
 .more-button {
   width: 100%;
+  /* Стили кнопок */
 }
 
 
 .content__video-card-description-container {
- flex-grow:1;
- text-overflow: ellipsis;       
- white-space: nowrap;
- overflow: hidden;
+flex-grow:1;
+text-overflow: ellipsis;             /* ????????????????? Ознакомиться со свойствами */
+white-space: nowrap;
+overflow: hidden;
 }
 
 
 /* Делаем кнопки */
-
+?
 .search-form__label:hover {
   text-decoration: underline 1px #FFF;
   text-underline-offset: 5px;
@@ -274,11 +285,11 @@ text-align: left;
   outline: none;
 }
 
-.search-form__textfield::placeholder {
+.search-form__textfield::placeholder {  /* Состояние самого текста в окне поля ввода выбора города */
   color: rgba(255, 255, 255, 0.7);
-  font-size: inherit;
   font-family: inherit;
   font-weight: inherit;
+  font-size: inherit;
 } 
 
 /* Поля для состояния  активности чекбоксов */
@@ -315,11 +326,6 @@ text-align: left;
 }        
 
 /* Состояние активности кнопки */
-.button:focus-visible {
-  outline: 1px solid #FFF;
-  outline-offset: 1px;
-}
-
 .button:active {
   background-color: #545050;
 }
@@ -331,3 +337,29 @@ text-align: left;
 .button:focus {
   outline: none;
 }
+
+.button:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
+}
+
+
+
+
+
+
+/*  */
+
+/* Стили   надо разбораться */
+.content__list::-webkit-scrollbar {
+  display: none;
+}
+
+.content__list-item:not(:last-child) {
+  /* margin: 0 0 34px; */
+}
+
+
+
+/* прописать активное состояние для кнопки найти */
+/* прописать состояние фокус  для всего */

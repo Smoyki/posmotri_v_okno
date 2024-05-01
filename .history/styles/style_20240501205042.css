@@ -242,9 +242,9 @@ text-align: left;
 
 .content__video-card-description-container {
  flex-grow:1;
- text-overflow: ellipsis;       
- white-space: nowrap;
- overflow: hidden;
+text-overflow: ellipsis;       
+white-space: nowrap;
+overflow: hidden;
 }
 
 
@@ -276,9 +276,9 @@ text-align: left;
 
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
-  font-size: inherit;
   font-family: inherit;
   font-weight: inherit;
+  font-size: inherit;
 } 
 
 /* Поля для состояния  активности чекбоксов */
@@ -315,11 +315,6 @@ text-align: left;
 }        
 
 /* Состояние активности кнопки */
-.button:focus-visible {
-  outline: 1px solid #FFF;
-  outline-offset: 1px;
-}
-
 .button:active {
   background-color: #545050;
 }
@@ -330,4 +325,9 @@ text-align: left;
 
 .button:focus {
   outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 1px;
 }
