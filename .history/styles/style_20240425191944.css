@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
+
+.page {
+  display:flex; /* + */
+  inline-size: 1200px;
+  block-size: 100%;
+  margin: auto;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
+  align-content: center; /* + */
+  justify-content: center;  /* + */
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+ 
+/* Здесь идет мой код */
+.content {
+  display:flex;
+  gap:30px;
+  width: 100%;
+  align-items: flex-end;
+  margin: 130px auto;
+  justify-content: center;
+}
+
+.result {
+  display:flex;
+  /* align-self: flex-end; */
+  gap:16px;
+  flex-direction: column;
+
+}
+
+.result__video-container {
+  display:flex;
+  position: relative;
+  width: 711px;
+  height: 386;
+}
+
+.result__video {
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 40px;
+  /* align-items: flex-start; */
+}
+
+.content__details {
+  width: 399px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  justify-content: start;
+}
+
+
+.content__list {
+  position: relative;
+  height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-self: baseline;
+}

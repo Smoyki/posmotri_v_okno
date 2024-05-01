@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
+
+.page {
+  display:flex; /* + */
+  inline-size: 1200px;
+  block-size: 100%;
+  margin: auto;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  background-color: #1b1919;
+  align-content: center; /* + */
+  justify-content: center;  /* + */
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+ 
+/* Здесь идет мой код */
+.content {
+  display:flex;
+  gap:30px;
+    margin: 0 30px;
+  /* inline-size: 100%; */
+}
+
+.result {
+  display:flex;
+  /* align-self: flex-end; */
+  gap:16px;
+  flex-direction: column;
+  width: Hug (711px)px;
+  height: Hug (456px)px;
+
+
+}
+
+.result__video-container {
+  display:block;
+  position: relative;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 40px;
+  /* align-items: flex-start; */
+}
+
+.content__details {
+  inline-size: 100%;
+}
+
