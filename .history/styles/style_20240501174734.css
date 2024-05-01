@@ -20,7 +20,7 @@ html {
   /*align-content: center; /* + */
   /*justify-content: center;  /* + */
   align-items: center;
-  min-height: 800px; /* Узнать по поводу этого свойства */
+  max-height: 800px;
 
 }
 
@@ -48,7 +48,7 @@ ol {
   display:flex;
   gap:30px;
   width: 100%;
-  /* align-items: end; + Закомментировать и проверить */
+  /*align-items: end; + Закомментировать и проверить */
   margin: 133px 30px; 
   /* Код */
 }

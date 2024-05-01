@@ -19,8 +19,8 @@ html {
   background-color: #1b1919;
   /*align-content: center; /* + */
   /*justify-content: center;  /* + */
-  align-items: center;
-  min-height: 800px; /* Узнать по поводу этого свойства */
+  align-items: center;   /* + */
+  max-height: 800px;
 
 }
 
@@ -49,8 +49,8 @@ ol {
   gap:30px;
   width: 100%;
   /* align-items: end; + Закомментировать и проверить */
-  margin: 133px 30px; 
-  /* Код */
+  margin: 133px 30px; */
+  /*  */
 }
 
 .result {
