@@ -19,7 +19,7 @@ html {
   background-color: #1b1919;
   align-items: center;
   /*min-height: 800px; */
-  padding: 133px 30px;
+  padding: 1;
 }
 
 h1,
@@ -92,7 +92,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   overflow-y: scroll;
-  max-width: 399px; /* width */
+  width: 399px;
   scrollbar-width: none;
   overflow-x: hidden;
 }
